@@ -3,7 +3,7 @@ package dev.jba;
 import org.bson.types.ObjectId;
 import io.quarkus.mongodb.panache.common.MongoEntity;
 
-@MongoEntity
+@MongoEntity(collection = "profiles")
 public class Profile {
 
     public ObjectId id;
